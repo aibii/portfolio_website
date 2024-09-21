@@ -131,3 +131,8 @@ export const ListIcon = styled.img`
     margin-bottom: 0px;
   }
 `
+
+export const IconContainer = styled.div`
+ display: flex;
+  align-items: center;
+`;
