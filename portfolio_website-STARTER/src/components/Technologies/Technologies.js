@@ -1,7 +1,7 @@
 import React from 'react';
 import { DiAngularSimple, DiFirebase, DiReact, DiZend, DiPhotoshop, DiMysql } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle, } from './TechnologiesStyles';
+import { List, ListContainer, ListItem, ListParagraph, ListTitle, StyledListItem, IconWrapper } from './TechnologiesStyles';
 import { IconContainer } from '../Acomplishments/AcomplishmentsStyles';
 
 const Technologies = () =>  (
@@ -14,45 +14,47 @@ const Technologies = () =>  (
       From Back-end To Design
     </SectionText>
     <List>
-      <ListItem>
-        <IconContainer>
-          <DiReact size="3rem"/>
-          <DiAngularSimple size="3rem"/>
-        </IconContainer>
-          <ListContainer>
-            <ListTitle>Front-End</ListTitle>
-            <ListParagraph>
-              Experience with <br />
-              React.js and Angular
-            </ListParagraph>
-          </ListContainer>
-      </ListItem>
-      <ListItem>
-        <IconContainer>
-          <DiMysql size="3rem"/>
-          <DiFirebase size="3rem"/>
-        </IconContainer>
-          <ListContainer>
-            <ListTitle>Back-End</ListTitle>
-            <ListParagraph>
-              Experience with <br />
-              Node.js and MySQL
-            </ListParagraph>
-          </ListContainer>
-      </ListItem>
-      <ListItem>
-        <IconContainer>
-            <DiZend size="3rem"/>
-            <DiPhotoshop size="3rem"/>
-        </IconContainer>
-          <ListContainer>
-            <ListTitle>UI/UX</ListTitle>
-            <ListParagraph>
-              Experience with <br />
-              Figma and Photoshop
-            </ListParagraph>
-          </ListContainer>
-      </ListItem>
+    <StyledListItem>
+      <IconWrapper>
+        <DiReact size="3rem" />
+        <DiAngularSimple size="3rem" />
+      </IconWrapper>
+      <ListContainer>
+        <ListTitle>Front-End</ListTitle>
+        <ListParagraph>
+          Experience with <br />
+          React.js and Angular
+        </ListParagraph>
+      </ListContainer>
+    </StyledListItem>
+
+    <StyledListItem>
+      <IconWrapper>
+        <DiMysql size="3rem" />
+        <DiFirebase size="3rem" />
+      </IconWrapper>
+      <ListContainer>
+        <ListTitle>Back-End</ListTitle>
+        <ListParagraph>
+          Experience with <br />
+          MySQL and Node.js
+        </ListParagraph>
+      </ListContainer>
+    </StyledListItem>
+
+    <StyledListItem>
+      <IconWrapper>
+        <DiZend size="3rem" />
+        <DiPhotoshop size="3rem" />
+      </IconWrapper>
+      <ListContainer>
+        <ListTitle>UX/UI</ListTitle>
+        <ListParagraph>
+          Experience with <br />
+          Figma and Photoshop
+        </ListParagraph>
+      </ListContainer>
+    </StyledListItem>
     </List>
   </Section>
 );

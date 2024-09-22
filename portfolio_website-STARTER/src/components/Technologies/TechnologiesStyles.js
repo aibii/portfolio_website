@@ -133,6 +133,40 @@ export const ListIcon = styled.img`
 `
 
 export const IconContainer = styled.div`
- display: flex;
+  display: flex;
   align-items: center;
+  justify-content: center; /* Centers items horizontally */
+  gap: 0; /* Ensures no gap between icons */
+  
+  @media ${(props) => props.theme.breakpoints.sm} {
+    justify-content: center; /* Center icons on small screens */
+    flex-direction: row; /* Keep icons in a row on small screens */
+    gap: 0; /* Ensure there's no gap on small screens */
+  }
 `;
+
+// StyledListItem component for List Item with responsive layout
+export const StyledListItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    flex-direction: row; /* Row direction for small screens */
+    align-items: center; /* Align icons and text vertically centered */
+  }
+`;
+
+// IconWrapper component for icons
+export const IconWrapper = styled.div`
+  display: flex;
+  gap: 0.5rem; /* Small gap between icons */
+
+  @media (max-width: 768px) {
+    justify-content: flex-start; /* Align icons next to each other */
+  }
+`;
+
+
