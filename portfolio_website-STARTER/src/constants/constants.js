@@ -43,3 +43,11 @@ export const TimeLineData = [
   { year: 2023, text: 'Completed placement at the Ministry of Health', },
   { year: 2024, text: 'Graduated from college', },
 ];
+
+
+export const data = [
+  { number: 5, text: 'Projects Completed' },
+  { number: 60, text: 'Tutoring Sessions in 2023' },
+  { number: 10, text: 'Technologies & Languages Learned' },
+  { number: 2, text: 'Years of Coding Experience' }
+];
